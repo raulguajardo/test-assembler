@@ -15,30 +15,25 @@ int CommandCheck(char* c)
 	int i = 0;
 	string comm;
 
-	//takes first 3 letters in lowercase of command and adds them to comm
-	for (i; i<3; i++)
-	{
-		c[i] = tolower(c[i]);
-		comm = comm + c[i];
-	}
+	comm = c;
 
 
 	//command to decimal converter
-	if(comm == "loa")
+	if(comm == "load")
 		return 1;
-	else if(comm == "exe")
+	else if(comm == "execute")
 		return 2;
-	else if(comm == "deb")
+	else if(comm == "debug")
 		return 3;
-	else if(comm == "dum")
+	else if(comm == "dump")
 		return 4;
-	else if(comm == "hel")
+	else if(comm == "help")
 		return 5;
-	else if(comm == "ass")
+	else if(comm == "assemble")
 		return 6;
-	else if(comm == "dir")
+	else if(comm == "directory")
 		return 7;
-	else if(comm == "exi")
+	else if(comm == "exit")
 		return 8;
 	else return 0;
 }
