@@ -170,8 +170,6 @@ void dump(char* c)
 void help()
 {
 	cout<<"\t>>Type command you want to use without <>.\n";
-	cout<<"\t>>Feel free to only input the first 3 letters of any command.\n";
-	cout<<"\t>>Make sure there is only one space between parameters.\n";
 	cout<<"<load filname>"<<endl;
 	cout<<"\t\t\tLoads file of filename specified.\n";
 	cout<<"<execute>"<<endl;
